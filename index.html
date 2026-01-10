@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sree Saravanan - Cinematographer | DOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <h2>SREE SARAVANAN</h2>
+                <p class="tagline">Cinematographer | DOP</p>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#showreel" class="nav-link">Showreel</a></li>
+                    <li><a href="#work" class="nav-link">Work</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line">Capturing Stories</span>
+                <span class="line">Through Light</span>
+            </h1>
+            <p class="hero-subtitle">Crafting visual narratives that resonate</p>
+            <div class="hero-cta">
+                <a href="#showreel" class="btn btn-primary">View Showreel</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section id="showreel" class="showreel">
+        <div class="container">
+            <h2 class="section-title">Showreel</h2>
+            <div class="video-grid">
+                <div class="video-card main-showreel">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/F32BQMkNlAc" 
+                                title="Sree Saravanan Showreel" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Demo Reel</h3>
+                        <p>A showcase of selected cinematography work</p>
+                    </div>
+                </div>
+                
+                <!-- Additional video slots - Admin can add more -->
+                <div class="video-card" id="videoSlot1" style="display: none;">
+                    <div class="video-wrapper">
+                        <iframe src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title"></h3>
+                        <p class="video-desc"></p>
+                    </div>
+                </div>
+
+                <div class="video-card" id="videoSlot2" style="display: none;">
+                    <div class="video-wrapper">
+                        <iframe src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3 class="video-title"></h3>
+                        <p class="video-desc"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <h2 class="section-title">Filmography</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-image">
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Kaadhal Enbadhu Podhu Udamai</h3>
+                                <p class="work-year">2025</p>
+                                <p class="work-role">Cinematographer</p>
+                                <div class="work-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>7.1 IMDb</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image">
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Oru Nalla Naal Paathu Solren</h3>
+                                <p class="work-year">2018</p>
+                                <p class="work-role">Director of Photography</p>
+                                <div class="work-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>5.7 IMDb</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image">
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Gemini Ganeshanum Suruli Raajanum</h3>
+                                <p class="work-year">2017</p>
+                                <p class="work-role">Cinematographer</p>
+                                <div class="work-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>5.8 IMDb</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-image">
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Charles Shafiq Karthiga</h3>
+                                <p class="work-year">2015</p>
+                                <p class="work-role">Director of Photography</p>
+                                <div class="work-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>6.6 IMDb</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-card upcoming">
+                    <div class="work-image">
+                        <div class="work-overlay">
+                            <div class="work-details">
+                                <h3>Graghanam</h3>
+                                <p class="work-year">In Production</p>
+                                <p class="work-role">Cinematographer</p>
+                                <span class="badge">Upcoming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead">Passionate cinematographer with a keen eye for visual storytelling and a dedication to bringing narratives to life through the lens.</p>
+                    <p>With experience spanning multiple feature films and projects in the Tamil film industry, I specialize in creating compelling visual narratives that enhance storytelling. My work has been recognized across various platforms, and I continue to push the boundaries of cinematography with each project.</p>
+                    
+                    <div class="skills">
+                        <h3>Expertise</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Cinematography</span>
+                            <span class="skill-tag">Direction of Photography</span>
+                            <span class="skill-tag">Lighting Design</span>
+                            <span class="skill-tag">Visual Storytelling</span>
+                            <span class="skill-tag">Color Grading</span>
+                            <span class="skill-tag">Camera Operations</span>
+                        </div>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>5+</h4>
+                            <p>Feature Films</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>10+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>Multiple</h4>
+                            <p>Awards & Recognition</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's collaborate on your next project</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>Available on request</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>Available on request</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>India</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.imdb.com/name/nm9103175/" target="_blank" class="social-link" aria-label="IMDb">
+                        <i class="fab fa-imdb"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dop_shreesaravanan/" target="_blank" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://in.linkedin.com/in/sreesaravananmanoharan" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/p/Sree-saravanan-100063888076086/" target="_blank" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=F32BQMkNlAc" target="_blank" class="social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://in.bookmyshow.com/person/sree-saravanan/1084229" target="_blank" class="social-link" aria-label="BookMyShow">
+                        <i class="fas fa-ticket-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sree Saravanan. All rights reserved.</p>
+            <p class="footer-tagline">Cinematographer | Director of Photography</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
