@@ -694,7 +694,6 @@ img {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: var(--transition);
-    height: 100%;
 }
 
 .expertise-card:hover {
@@ -878,8 +877,8 @@ img {
 .modal-content {
   margin: auto;
   display: block;
-  max-width: 90%;
-  max-height: 80vh;
+  max-width: 95%;
+  max-height: 95vh;
   object-fit: contain;
 }
 
