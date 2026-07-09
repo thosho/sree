@@ -215,7 +215,7 @@
             <h2 class="section-title">About Me</h2>
             <div style="background: var(--card-bg); padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); line-height: 1.8; display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
                 <div style="flex: 1; min-width: 250px; display: flex; justify-content: center;">
-                    <img src="images/profile.jpg" alt="Shree Saravanan" style="max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                    <img src="images/profile.jpg" alt="Shree Saravanan" class="clickable-img" style="max-width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);" onclick="document.getElementById('imageModal').style.display='block'; document.getElementById('expandedImg').src=this.src;">
                 </div>
                 <div style="flex: 2; min-width: 300px;">
                     <p style="margin-bottom: 20px; font-size: 1.1rem; color: var(--text-color);">
@@ -323,7 +323,7 @@
                 
                 <div style="width: 100%; margin-top: 40px; padding: 20px; background: rgba(255,255,255,0.05); border-radius: 10px; text-align: center;">
                     <h3 style="color: var(--primary-color); margin-bottom: 10px; font-size: 1.3rem;">Professional Positioning</h3>
-                    <p style="color: #fff; font-size: 1.1rem; font-weight: bold;">Festival Recognized Director of Photography</p>
+                    <p style="color: var(--text-color); font-size: 1.1rem; font-weight: bold;">Festival Recognized Director of Photography</p>
                     <p style="color: var(--text-color); font-size: 1rem; margin-top: 5px;">Blending Cinematic Storytelling with Advanced HDR & Color Science Workflows</p>
                 </div>
             </div>
@@ -386,6 +386,12 @@
             <p class="footer-tagline">Cinematographer | Director of Photography</p>
         </div>
     </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" onclick="this.style.display='none'">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
 
     <script src="script.js"></script>
 </body>
