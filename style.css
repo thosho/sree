@@ -200,7 +200,7 @@ img {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: linear-gradient(135deg, var(--bg-dark) 0%, var(--accent-secondary) 100%);
+    background: url('images/hero_bg.jpg') center/cover no-repeat;
     overflow: hidden;
 }
 
@@ -211,9 +211,8 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23000000" width="1200" height="800"/><g fill-opacity="0.03"><circle fill="%23ffffff" cx="600" cy="400" r="300"/></g></svg>');
-    background-size: cover;
-    opacity: 0.3;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
 }
 
 .hero-overlay {
