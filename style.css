@@ -688,6 +688,21 @@ img {
     margin-bottom: 60px;
 }
 
+.expertise-card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.expertise-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
 .info-card {
     background-color: var(--card-bg);
     padding: 40px 30px;
