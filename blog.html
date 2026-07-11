@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Saravanan - Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .blog-header {
+            padding: 150px 0 50px;
+            text-align: center;
+        }
+        .blog-header h1 {
+            font-size: 3rem;
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+        .blog-header .line {
+            display: block;
+            background: linear-gradient(135deg, var(--text-color) 0%, var(--primary-color) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 30px;
+            padding: 40px 0 80px;
+        }
+        .blog-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .blog-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .blog-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background-color: #111;
+        }
+        .blog-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-date {
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        .blog-title {
+            font-size: 1.3rem;
+            color: var(--text-color);
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .blog-excerpt {
+            color: var(--text-color);
+            opacity: 0.8;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .blog-readmore {
+            color: var(--primary-color);
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            margin-top: auto;
+        }
+        .blog-readmore i {
+            margin-left: 8px;
+            transition: var(--transition);
+        }
+        .blog-card:hover .blog-readmore i {
+            transform: translateX(5px);
+        }
+        
+        #loading-indicator {
+            text-align: center;
+            padding: 50px;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <h2>SHREE SARAVANAN</h2>
+                <p class="tagline">Cinematographer | DOP</p>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#showreel" class="nav-link">Showreel</a></li>
+                    <li><a href="index.html#work" class="nav-link">Work</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+        <div class="container">
+            <h1><span class="line">Cinematography</span> Blog</h1>
+            <p>Insights, behind-the-scenes, and visual storytelling studies.</p>
+        </div>
+    </header>
+
+    <!-- Blog Grid -->
+    <section class="blog-section">
+        <div class="container">
+            <div id="loading-indicator">
+                <i class="fas fa-spinner fa-spin"></i> Loading posts...
+            </div>
+            <div class="blog-grid" id="blog-grid">
+                <!-- Posts will be dynamically inserted here by blog.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Shree Saravanan. All rights reserved.</p>
+            <p class="footer-tagline">Cinematographer | Director of Photography</p>
+            <p style="margin-top: 15px; font-size: 0.9rem;">Designed by <a href="https://thoshotech.com" target="_blank" style="color: var(--primary-color); text-decoration: none;">Thosho Tech</a></p>
+        </div>
+    </footer>
+
+    <script src="blog.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -12,7 +12,7 @@
     --accent-primary: #ff6b35;
     --accent-secondary: #004e89;
     --border-color: #e0e0e0;
-    --overlay: rgba(0, 0, 0, 0.7);
+    --overlay: rgba(0, 0, 0, 0.3);
     --shadow: rgba(0, 0, 0, 0.1);
     --card-bg: #ffffff;
     
@@ -31,7 +31,7 @@
     --text-primary: #f0f0f0;
     --text-secondary: #a0a0a0;
     --border-color: #2a2a2a;
-    --overlay: rgba(0, 0, 0, 0.85);
+    --overlay: rgba(0, 0, 0, 0.45);
     --shadow: rgba(255, 255, 255, 0.05);
     --card-bg: #151515;
 }
@@ -200,7 +200,7 @@ img {
     align-items: center;
     justify-content: center;
     position: relative;
-    background: url('images/hero_bg.jpg') center/cover no-repeat;
+    background: url('images/shreesaravanan.png') center/cover no-repeat;
     overflow: hidden;
 }
 
